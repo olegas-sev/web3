@@ -13,7 +13,11 @@ function Login() {
                 />
 
                 <button
-                    onClick={authenticate}
+                    onClick={() => {
+                        if (window.ethereum == undefined) {
+                            window.open("https://metamask.io/")
+                        } else authenticate()
+                    }}
                     className={`bg-[#2c2c2c] rounded-lg p-5 font-semibold ${
                         isAuthenticating ? "cursor-not-allowed opacity-50" : ""
                     }`}
