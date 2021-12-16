@@ -1,24 +1,15 @@
-# Decentralized application
+# Basic Sample Hardhat Project
 
-## What technologies do I use here?
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
 
--   [Ethers](https://docs.ethers.io/)
--   [Hardhat](https://hardhat.org/)
--   [Ethereum Waffle](https://getwaffle.io/)
--   [Chai](https://www.chaijs.com/)
--   [Solidity](https://docs.soliditylang.org/)
+Try running some of the following tasks:
 
-### Package scripts
-
-### `npm i`
-
-Installs dependencies needed from cloned repository.
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
+```shell
+npx hardhat accounts
+npx hardhat compile
+npx hardhat clean
+npx hardhat test
+npx hardhat node
+node scripts/sample-script.js
+npx hardhat help
+```
