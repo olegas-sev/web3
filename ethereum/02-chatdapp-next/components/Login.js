@@ -18,7 +18,7 @@ function Login() {
                         isAuthenticating ? "cursor-not-allowed opacity-50" : ""
                     }`}
                 >
-                    Sign in usign METAMASK
+                    Sign in using METAMASK
                 </button>
             </div>
             <div className="w-full h-screen">
