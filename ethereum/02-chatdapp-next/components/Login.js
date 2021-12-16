@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { useMoralis } from "react-moralis"
 function Login() {
-    const { authenticate } = useMoralis()
+    const { authenticate, isAuthenticating } = useMoralis()
     return (
         <div className="bg-black relative text-white">
             <div className="flex flex-col absolute z-50 h-4/6 w-full items-center justify-center space-y-4 ">
@@ -11,11 +11,14 @@ function Login() {
                     height={200}
                     width={200}
                 />
+
                 <button
                     onClick={authenticate}
-                    className="bg-[#2c2c2c] rounded-lg p-5 font-semibold animate-pulse"
+                    className={`bg-[#2c2c2c] rounded-lg p-5 font-semibold ${
+                        isAuthenticating ? "cursor-not-allowed opacity-50" : ""
+                    }`}
                 >
-                    Login to the METAVERSE
+                    Sign in usign METAMASK
                 </button>
             </div>
             <div className="w-full h-screen">
